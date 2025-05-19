@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #181848;
+    --secondary: #191013;
+    --tertiary: #5b88a5;
+    --background:#d4d4d4;
+    --background-transparency: #5b88a5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+    min-width: 1200px;
+}
+
+header {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--background-transparency);
+}
+
+.date {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: thin;
+    line-height: 220%;
+}
+
+header .name {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+header .menu ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+}
+
+header .menu a {
+    color: var(--primary);
+}
+
+header .social-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header .social-menu img {
+    width: 26px;
+}
+
+main {
+    width: 85%;
+    margin: 180px auto;
+}
+
+main .profile {
+    color: var(--primary);
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .job-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+}
+
+main .job-area h1 {
+    font-size: 100px;
+    line-height: 1.16;
+}
+
+main .job-area a {
+    margin-top: 20px;
+    width: 160px;
+    height: 60px;
+    border: 1px solid var(--secondary);
+    font-size: 20px;
+    color: var(--secondary);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+main .job-area .background-layer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--tertiary);
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    border-radius: 6px;
+    z-index: -1;
+}
+
+main .photo img {
+    width: 500px;
+        border-radius: 50%;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+}
+
+main .title {
+    font-weight: 900;
+    color: var(--tertiary);
+    font-size: 100px;
+}
+
+main .about {
+    margin-top: 100px;
+    color: var(--primary);
+    font-size: 24px;
+}
+
+main .about .title+.text {
+    margin-top: 32px;
+}
+
+.w-900 {
+    width: 900px;
+}
+
+main .about .history {
+    margin-left: 280px;
+    margin-top: 150px;
+}
+
+main .about .interval {
+    font-weight: 500;
+    font-size: 24px
+}
+
+main .about .interval+p {
+    margin-top: 10px;
+}
+
+main .about ul {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+main .work {
+    margin-top: 100px;
+    color: var(--primary);
+    font-size: 24px;
+}
+
+main .work .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 120px;
+    gap: 60px;
+}
+
+main .work .item {
+    flex: 1 1 45%;
+}
+
+main .work .item img {
+    width: 100%;
+}
+
+main .work .item h3 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+main .work .item .description {
+    font-size: 18px;
+}
+
+main .contact {
+    margin-top: 100px;
+}
+
+main .contact .region {
+    display: flex;
+    margin-top: 50px;
+    gap: 60px;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+main .contact nav {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+main .contact nav a {
+    color: var(--primary);
+}
